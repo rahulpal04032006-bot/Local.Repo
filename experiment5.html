@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+           margin-top: 100px;
+        }
+        .container{
+            width: 800px;
+            height: auto;
+             background: #3F5EFB;
+            background: linear-gradient(129deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            box-shadow: 0 4px 8px;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input{
+            height: 25px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+        .container button{
+            background-color: aqua;
+        }
+        .container button:hover{
+            background-color: bisque;
+            
+        }
+        #datafill{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px;
+            gap: 5px;
+        }
+        .output{
+            width: auto;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Employee Salary Managment System</h1><br>
+        <div id="datafill">
+        <input type="text" id="name" placeholder="Username">
+        <input type="number" id="empId" placeholder="Employee ID">
+        <input type="number" id="salary" placeholder="Salary">
+        <input type="text" id="department" placeholder="Department"></div>
+        <button onclick="addEmployee()">Add Employee</button>
+        <button onclick="displayAll()">Display All</button>
+        <button onclick="salary()">salary >50000</button>
+        <button onclick="TotalSalary()">Total salary</button>
+        <button onclick="avgSalary()">Average Salary</button>
+        <button onclick="Count()">Count by Department</button>
+            <div class="output"></div>
+
+    </div>
+    <script src="experiment5.js"></script>
+    
+</body>
+</html>
