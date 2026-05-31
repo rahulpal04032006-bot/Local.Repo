@@ -3,13 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-// import Student from './Student'
+import RegistrationForm from "./RegistrationForm";
+import StudentBio from "./studentBio";
+import Counter from "./counter";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <>
    <div>
+   
     <h1>Welcome to My Web Page</h1>
    <h2>Introduction</h2>
    <p>Hello everyone I am React that is framework of java scripts</p>
@@ -22,7 +26,14 @@ function App() {
    <video controls>
     <source src=""type="videomp4/"></source>
    </video>
+  
+    
+    
    </div>
+   <RegistrationForm/>
+    <StudentBio/>
+    <Counter/>
+   </>
 
   )
 }
